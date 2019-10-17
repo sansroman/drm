@@ -5,6 +5,7 @@ use Mix.Config
 config :drm, remote_host: "docker.modao.cc"
 config :drm, remote_port: "8443"
 config :logger, :console, format: "$time $metadata[$level] $levelpad$message\n"
+import_config "secret.exs"
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this

@@ -4,8 +4,8 @@ defmodule Drm.RemoteDockerRepo do
   @remote_host Application.get_env(:drm, :remote_host)
   @remote_port Application.get_env(:drm, :remote_port)
 
-  @username "docker"
-  @password "devmodao"
+  @username Application.get_env(:drm, :username)
+  @password Application.get_env(:drm, :password)
   @base_url "https://#{@username}:#{@password}@#{@remote_host}:#{@remote_port}/v2"
 
   def fetch_images do

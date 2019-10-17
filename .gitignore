@@ -24,3 +24,5 @@ drm-*.tar
 
 # Ignore IDE config
 .idea
+
+**secret**
